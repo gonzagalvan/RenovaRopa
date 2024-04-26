@@ -1,0 +1,412 @@
+body {
+    background-color: #FAF4E8;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 110px;
+    font-family: "Kadwa", serif;
+    font-weight: bold;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(250, 244, 233, 0.7);
+    backdrop-filter: blur(10px);
+    align-self: flex-start;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 79%;
+}
+
+.collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+}
+
+.logo {
+    height: 95px;
+}
+
+
+.mainBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+    width: 100%;
+}
+
+.mainBox img {
+    width: 79%;
+}
+
+.mainBox p {
+    margin-top: 15px;
+    font-family: "Kadwa", serif;
+    font-size: 11pt;
+    width: 79%;
+}
+
+.mainBox p:after {
+    content: '█';
+    color: burlywood;
+    animation: blink 0.9s steps(5, start) infinite;
+}
+  
+@keyframes blink {
+    to {
+      visibility: hidden;
+    }
+}
+
+.destacadosInicio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Kadwa", serif;
+    width: 100%;
+}
+
+.cartelPrincipal {
+    display: flex;
+    width: 79%;
+}
+
+h1 {
+    margin-top: 40px;
+    font-family: "Kadwa", serif;
+    font-weight: bold;
+    font-size: 35pt;
+}
+
+.containerDestacadosInicio {
+    width: 79%;
+    display: flex;
+    gap: 40px;
+}
+
+.cardDestacadosInicio {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cardDestacadosInicio img {
+    width: 100%;
+}
+
+.cardDestacadosInicio .nombre {
+    font-family: "Kadwa", serif;
+    font-size: 22pt;
+    margin-top: -17px;
+}
+
+.cardDestacadosInicio .tipoProd {
+    color: gray;
+    margin-top: 11px;
+    font-size: 11pt;
+}
+
+.cardDestacadosInicio .precio {
+    font-weight: normal;
+    font-size: 18pt;
+    margin-top: -25px;
+}
+
+.espaciador {
+    align-self: flex-end;
+    margin-bottom: 116.5px;
+    margin-left: 5px;
+    width: 77px;
+    height: 30px;
+    background-color: black;
+    transition: transform 0.3s ease-in-out;
+}
+
+.espaciador:hover {
+    transform: scale(1.1);
+}
+
+.espaciador a {
+    padding-top: 3px;
+    padding-left: 6px;
+    text-decoration: none;
+    color: #FAF4E8;
+    font-size: 9pt;
+}
+
+.mensaje {
+    display: flex;
+    justify-content: center;
+    color: burlywood;
+    gap: 10px;
+    width: 100%;
+}
+
+.contenedorMensaje {
+    display: flex;
+    width: 79%;
+}
+
+.mensaje .contenedorMensaje img {
+    width: 15%;
+}
+
+.mensaje .contenedorMensaje p {
+    margin-top: 68px;
+    padding-left: 13px;
+    font-family: "Kadwa", serif;
+    font-size: 200%;
+}
+
+.ropaDeportiva {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: burlywood;
+
+}
+
+.containerRopaDeportiva {
+    width: 79%;
+    display: flex;
+    justify-content: center;
+}
+
+.cardRopaDeportiva {
+    position: relative;
+    display: inline-block;
+}
+
+.ropaDeportivaText {
+    font-family: "Kadwa", serif;
+    font-weight: bold;
+    font-size: 250%;
+    position: absolute;
+    top: 48%;
+    left: 27%;
+    color: #FAF4E8;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+.cardRopaDeportiva img {
+    padding: 5%;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.cardRopaDeportiva img:hover {
+    transform: scale(1.05);
+    filter: brightness(60%);
+}
+
+.cardRopaDeportiva:hover .ropaDeportivaText {
+    visibility: visible;
+    opacity: 1;
+}
+
+.destacados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Kadwa", serif;
+}
+
+.containerDestacados {
+    display: flex;
+    justify-content: center;
+    gap: 40%;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.cardDestacados {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardDestacados img {
+    width: 219px;
+    height: 219px;
+}
+
+
+.nombre {
+    font-family: "Kadwa", serif;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.verMas {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.verMas p {
+    margin: 5px;
+    color: #FAF4E8;
+}
+
+#pie {
+    font-family: "Kadwa", serif;
+    width: 100%;
+    background-color: black;
+    color: #FAF4E8;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.containerFooter {
+    width: 79%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.marca p {
+    font-family: "Kadwa", serif;
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+.containerFooter p {
+    font-weight: normal;
+}
+
+.logoFooter {
+    display: flex;
+    align-items: flex-start;
+}
+
+.logoFooter img {
+    margin-left: auto;
+    max-width: 13%; 
+    object-fit: contain;
+    margin-right: 10%;
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.nosotrosTitulo {
+    font-family: "Kadwa", serif;
+    font-weight: bold;
+}
+
+.nosotrosTexto {
+    text-align: center;
+    font-family: "Kadwa", serif;
+    width: 79%;
+}
+
+
+@media (max-width: 551px) {
+    nav {
+        height: auto; 
+        width: 550px;
+    }
+
+    .navbar {
+        background-color: #FAF4E8;
+    }
+
+    .container-fluid {
+        background-color: #FAF4E8;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .mainBox img {
+        width: 100%;
+    }
+
+    .containerDestacadosInicio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedorMensaje {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .mensaje {
+        gap: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .mensaje .contenedorMensaje img {
+        width: 45%;
+    }
+
+    .mensaje .contenedorMensaje p {
+        padding-top: -200px;
+        font-family: "Kadwa", serif;
+        font-size: 150%;
+    }
+
+    .containerDestacados {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .containerRopaDeportiva{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .catalogo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #pie {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .containerFooter{
+        display: flex;
+        flex-direction: column;
+    }
+}
